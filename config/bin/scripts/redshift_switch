@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Super + x
+
+pkill -USR1 '^redshift$'
+
+exit 0

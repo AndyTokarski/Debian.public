@@ -1,0 +1,5 @@
+cd /usr/share/plymouth/themes
+cp -Rf orkan /usr/share/plymouth/themes
+sudo plymouth-set-default-theme -l
+sudo plymouth-set-default-theme -R orkan
+sudo update-initramfs -u

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Orkan Plymouth theme
+Description=A modified Homeworld theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/orkan
+ScriptFile=/usr/share/plymouth/themes/orkan/orkan.script

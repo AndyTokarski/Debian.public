@@ -1,0 +1,18 @@
+#!/bin/sh
+screen() {
+    scrot /home/orkan/Pictures/screenshots/%Y-%m-%d_%H%M%S-scrot.png
+}
+
+case "$1" in
+    screen)
+        screen
+        ;;
+    window)
+        scrot -s /home/orkan/Pictures/screenshots/%Y-%m-%d_%H%M%S-scrot.png
+        ;;
+    *)
+        echo "Usage: $0 {screen|window}"
+        exit 2
+esac
+
+exit 0

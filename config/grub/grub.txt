@@ -1,0 +1,5 @@
+# cp books.png /boot
+# chmod 644 /boot/books.png
+# .rw-r--r-- 1.4M root 15 Feb  2022 /boot/lock.png
+# cp grub /etc/default/grub
+# update-grub

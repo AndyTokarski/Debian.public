@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="26"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="3"/>
+        <value type="int" value="2"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="4"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="14"/>
+        <value type="int" value="1"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+      </property>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="66"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="arrow-down"/>
+      <property name="show-button-title" type="bool" value="false"/>
+    </property>
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="0"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="show-labels" type="bool" value="false"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="audacious;chromium.instance101305;chromium.instance108196;chromium.instance12863;chromium.instance136167;chromium.instance14844;chromium.instance1551;chromium.instance1554;chromium.instance1555;chromium.instance1556;chromium.instance1560;chromium.instance1561;chromium.instance1564;chromium.instance1565;chromium.instance1566;chromium.instance1567;chromium.instance1568;chromium.instance1569;chromium.instance1570;chromium.instance1571;chromium.instance1573;chromium.instance1574;chromium.instance1580;chromium.instance1584;chromium.instance1585;chromium.instance1587;chromium.instance1597;chromium.instance1598;chromium.instance1601;chromium.instance1604;chromium.instance1610;chromium.instance1615;chromium.instance1617;chromium.instance1620;chromium.instance1622;chromium.instance1623;chromium.instance1629;chromium.instance1630;chromium.instance1634;chromium.instance1636;chromium.instance1640;chromium.instance1642;chromium.instance1644;chromium.instance1645;chromium.instance1646;chromium.instance1647;chromium.instance1652;chromium.instance1661;chromium.instance1677;chromium.instance1700;chromium.instance1718;chromium.instance1719;chromium.instance1722;chromium.instance1723;chromium.instance1724;chromium.instance1727;chromium.instance1731;chromium.instance1732;chromium.instance1733;chromium.instance1734;chromium.instance1739;chromium.instance1743;chromium.instance1750;chromium.instance17502;chromium.instance17554;chromium.instance1763;chromium.instance1768;chromium.instance1780;chromium.instance1784;chromium.instance1786;chromium.instance1788;chromium.instance1790;chromium.instance1795;chromium.instance1797;chromium.instance1799;chromium.instance1801;chromium.instance1811;chromium.instance1818;chromium.instance1819;chromium.instance1829;chromium.instance1831;chromium.instance1834;chromium.instance1838;chromium.instance1850;chromium.instance1855;chromium.instance1863;chromium.instance1892;chromium.instance1897;chromium.instance1921;chromium.instance1924;chromium.instance1932;chromium.instance1935;chromium.instance1938;chromium.instance2001;chromium.instance2009;chromium.instance2025;chromium.instance2043;chromium.instance2090;chromium.instance2103;chromium.instance2112;chromium.instance2149;chromium.instance2166;chromium.instance2186;chromium.instance2193;chromium.instance2217;chromium.instance2247;chromium.instance2348;chromium.instance2690;chromium.instance2739;chromium.instance2826;chromium.instance2909;chromium.instance29164;chromium.instance2968;chromium.instance32030;chromium.instance3206;chromium.instance32424;chromium.instance35370;chromium.instance3860;chromium.instance4346;chromium.instance4477;chromium.instance4984;chromium.instance5366;chromium.instance59750;chromium.instance6256;chromium.instance7371;chromium.instance74165;chromium.instance8192;firefox.instance10038;firefox.instance12974;firefox.instance141259;firefox.instance1810;firefox.instance1816;firefox.instance20145;firefox.instance2205;firefox.instance25318;firefox.instance2609;firefox.instance2743;firefox.instance2771;firefox.instance3412;firefox.instance3809;firefox.instance3929;firefox.instance4069;firefox.instance5218;firefox.instance52916;firefox.instance5328;firefox.instance7100;firefox.instance8484;smplayer;spotify;vlc"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-format" type="string" value="%a %_d %b, %H:%M:%S"/>
+      <property name="digital-time-format" type="string" value="%a %_d %b, %H:%M:%S"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-font" type="string" value="Sans 9"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-14" type="string" value="actions"/>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="wi-fi network connection “upc0214524” active: upc0214524 (79%)"/>
+        <value type="string" value="blueman"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="mkchromecast"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="smplayer"/>
+        <value type="string" value="toolbox"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="jetbrains-toolbox"/>
+        <value type="string" value="redshift"/>
+      </property>
+    </property>
+  </property>
+</channel>
