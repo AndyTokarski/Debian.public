@@ -10,6 +10,19 @@ cp config/sources/sources.list /etc/apt/sources.list
 
 apt -y update
 apt -y upgrade
+apt autoremove
 
-cat /etc/apt/sources.list
+apt-get install --no-install-recommends \
+exa \
+wget \
+nano \
+htop \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg \
+lsb-release \
+dialog \
+tree \
+zsh 
 
