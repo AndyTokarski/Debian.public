@@ -43,6 +43,7 @@ apt-listchanges
 echo " ------------------------- apt updated"
 apt list --installed | wc -l
 
+# sources
 cp config/sources/sources.list /etc/apt/sources.list
 
 apt -y update
@@ -75,7 +76,7 @@ gvfs
 echo " ------------------------- system installed"
 apt list --installed | wc -l
 
-apt install --no-install-recommends -y
+apt install --no-install-recommends -y \
 xserver-xorg-input-libinput \
 xserver-xorg-input-evdev \
 xserver-xorg-input-mouse
@@ -83,7 +84,7 @@ xserver-xorg-input-mouse
 echo " ------------------------- Xorg installed"
 apt list --installed | wc -l
 
-apt install --no-install-recommends -y
+apt install --no-install-recommends -y \
 xfce4 \
 xfce4-goodies \
 xfce4-sntray-plugin \
@@ -117,7 +118,7 @@ mousepad
 echo " ------------------------- XFCE installed"
 apt list --installed | wc -l
 
-apt install --no-install-recommends -y
+apt install --no-install-recommends -y \
 gimp \
 libreoffice-writer \
 libreoffice-calc \
@@ -128,26 +129,37 @@ transmission-gtk \
 gnome-disk-utility \
 imagemagick
 
-echo " ------------------------- tools installed"
+echo " ------------------------- Tools installed"
 apt list --installed | wc -l
 
 #google brave zoom spotify
 
-
+# files
 cp config/bashrc $HOME/.bashrc
 cp config/profile $HOME/.profile
 cp config/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
 
+# .config
 mkdir $HOME/.config
 cp -Rf config/configs/* $HOME/.config/
 
+# autostart
 mkdir $HOME/.config/autostart
 cp config/autostart/* $HOME/.config/autostart
 
+# bin
 mkdir $HOME/.local
 mkdir $HOME/.local/bin
 cp config/bin/scripts/* $HOME/.local/bin/
 chmod +x $HOME/.local/bin/*
+
+#fonts
+
+mkdir $HOME/.fonts
+cp config/fonts/* $HOME/.fonts
+
+# grub
+#plymouth
 
 
 echo " ------------------------- profile files copied"
