@@ -41,6 +41,7 @@ apt-listbugs \
 apt-listchanges 
 
 echo " ------------------------- apt updated"
+apt list --installed | wc -l
 
 cp config/sources/sources.list /etc/apt/sources.list
 
@@ -50,6 +51,7 @@ apt autoremove
 apt -y dist-upgrade
 
 echo " ------------------------- apt updated to sid"
+apt list --installed | wc -l
 
 apt-get install --no-install-recommends -y \
 exa \
@@ -65,13 +67,76 @@ dialog \
 tree \
 zsh \
 network-manager-config-connectivity-debian \
-network-manager-openvpn 
-
+network-manager-openvpn \
+firmware-iwlwifi \
+firmware-linux \
+gvfs
 
 echo " ------------------------- system installed"
+apt list --installed | wc -l
+
+apt install --no-install-recommends -y
+xserver-xorg-input-libinput \
+xserver-xorg-input-evdev \
+xserver-xorg-input-mouse
+
+echo " ------------------------- Xorg installed"
+apt list --installed | wc -l
+
+apt install --no-install-recommends -y
+xfce4 \
+xfce4-goodies \
+xfce4-sntray-plugin \
+xfce4-whiskermenu-plugin \
+xfconf \
+xfdesktop4 \
+xfce4-power-manager \
+xfce4-mount-plugin \
+xfce4-battery-plugin \
+xfce4-appmenu-plugin \
+thunar \
+thunar-volman \
+lxterminal \
+i3lock \
+scrot \
+redshift-gtk \
+lightdm-gtk-greeter \
+viewnior \
+neofetch \
+lxpolkit \
+lxappearance \
+blackbird-gtk-theme \
+xbacklight \
+tlp \
+fonts-ubuntu \
+fonts-ubuntu-console \
+numix-icon-theme-circle \
+numix-icon-theme \
+mousepad
+
+echo " ------------------------- XFCE installed"
+apt list --installed | wc -l
+
+apt install --no-install-recommends -y
+gimp \
+libreoffice-writer \
+libreoffice-calc \
+ffmpeg \
+vlc \
+smplayer \
+transmission-gtk \
+gnome-disk-utility \
+imagemagick
+
+echo " ------------------------- tools installed"
+apt list --installed | wc -l
+
+#google brave zoom spotify
+
 
 cp config/bashrc $HOME/.bashrc
 cp config/profile $HOME/.profile
+cp config/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
 
 mkdir $HOME/.config
 cp -Rf config/configs/* $HOME/.config/
@@ -86,8 +151,4 @@ chmod +x $HOME/.local/bin/*
 
 
 echo " ------------------------- profile files copied"
-
-
-# i3lock scrot redshift  lxterminal Thunar xfce redshift \
-
 
